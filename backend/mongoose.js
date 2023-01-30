@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URL ='mongodb+srv://RapidFood:Pass%40123@cluster0.irobqbg.mongodb.net/RapidFood?retryWrites=true&w=majority';
+const URL ='mongourl_to_connect';
 
 const mongoClient = async () =>{
     await mongoose.connect(URL ,{useNewUrlParser : true},(err,result) =>{
